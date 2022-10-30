@@ -16,8 +16,8 @@
 
   <script>
     (async function() {
-        const { text } = await( await fetch(`/api/getkilocrumb`)).json();
-        document.querySelector('#name').textContent = text;
+        const { kilocrumb } = await( await fetch(`/api/getkilocrumb`)).json();
+        document.querySelector('#name').textContent = kilocrumb;
     }());
   </script>
 </body>
